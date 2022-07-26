@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="application/json+oembed" href="oembed.json" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:title" content="Contact Us">
+        <meta property="og:description" content="Send us an email or contact us via Twitter if you have any questions!">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://46hana.surge.sh/contact">
+        <meta property="og:image" content="https://i.imgur.com/pq4FMMu.png">
+        <meta name="twitter:image:src" content="https://i.imgur.com/pq4FMMu.png">
+        <meta name="theme-color" content="#41bfea">
+
+        <title>46hana | Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="icon" type="image/x-icon" href="webimages/46hana.ico">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <style>
+            a:link{
+              text-decoration: none!important;
+              cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/"><img src="webimages/siteicon.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                        <li><a href="projects">PROJECTS</a></li>
+                        <li><a href="news">NEWS</a></li>
+                        <li><a href="contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            
+            <h1 class="about-h">CONTACT US</h1>
+                
+        </section>
+        <!--Contact page-->
+        <section class="contact-us">
+            <div class="row">
+                    <div class="contact-col">
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>
+                                <h5>46hanaVN@gmail.com</h5>
+                                <p>Send us your queries!</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fab fa-twitter"></i>
+                            <span>
+                                <h5><a href="https://twitter.com/46hanaVN" target="_blank">@46hanaVN</a></h5>
+                                <p>If you prefer instant messaging.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact-col">
+                        <form id="emailForm" action="https://formspree.io/f/xvoljznb" method="post">
+                            <input type="text" name="Name" id="nameInput" placeholder="Your name" required>
+                            <input type="email" name="Email" id="emailInput" placeholder="Email" required>
+                            <input type="text" name="_subject" id="subjectInput" placeholder="Subject" required>
+                            <textarea rows="8" name="Message" id="messageInput" placeholder="Message" required></textarea>
+                            <button type="submit" id="formbtn" class="hero-btn2">SEND MESSAGE</button>
+                        </form>
+                    </div>
+            </div>
+        </section>
+
+
+        <!--Footer-->
+        <section class="footer">
+            <h3>━━ 46花 ━━</h3>
+            <p>We're a team of passionate otakus who just want to create things and have fun in the process! If you would like to chat with us,<br> consider joining the Discord community below. We also have a Twitter where we will post various sneak peeks and other news.<br>Same with our YouTube and Reddit. We would love to see you around!</p>
+            <div class="icons">
+                <a href="https://twitter.com/46hanaVN" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCYZJ-n10bM_zKvz6wvIufVQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                <i class="fab fa-discord"></i>
+                <a href="https://www.reddit.com/user/46hana" target="_blank"><i class="fab fa-reddit"></i></a>
+            </div>
+        </section>
+
+    <!----JavaScript for toggle menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        window.onbeforeunload = () => {
+            for(const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
+    </body>
+</html>
