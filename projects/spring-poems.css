@@ -904,7 +904,7 @@ p.status.pl{
     display:flex;
     height:800px;
     flex-direction:row;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/spbg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(images/spbg.png);
 }
 
 .tabs .tabs-content .tabs-text{
@@ -963,7 +963,7 @@ p.status.pl{
     padding:0;
     margin:0;
     font-size:70px;
-    background: -webkit-linear-gradient(#c83964, rgb(255, 241, 241));
+    background: -webkit-linear-gradient(#ffd0fc, rgb(255, 0, 136));
     background-clip:text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1075,7 +1075,7 @@ p.status.pl{
         height:100%;
         flex-direction:column;
         align-items:center;
-        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/spbg.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(images/spbg.png);
     }
     
     .tabs .tabs-content .tabs-text{
@@ -1134,7 +1134,7 @@ p.status.pl{
         padding:0;
         margin:0;
         font-size:26px;
-        background: -webkit-linear-gradient(#fb67f1, rgb(255, 255, 255));
+        background: -webkit-linear-gradient(#ffd0fc, rgb(255, 0, 136));
         background-clip:text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
