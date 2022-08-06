@@ -629,6 +629,18 @@ p.status.pl{
     background-color:transparent;
 }
 
+.hero-btn.unr{
+    color:rgb(158, 158, 158);
+    border:1px solid rgb(158, 158, 158);
+}
+
+.hero-btn.unr:hover{
+    color:rgb(158, 158, 158);
+    border:1px solid rgb(158, 158, 158);
+    cursor:default;
+    background-color:transparent;
+}
+
 .project .all-projects{
     width:100%;
     text-align:center;
