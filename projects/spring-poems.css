@@ -47,7 +47,7 @@ nav img{
     content: "";
     width: 0%;
     height: 2px;
-    background: #ff4382;
+    background: #ff77a5;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -87,8 +87,8 @@ nav img{
     font-weight:600;
 }
 .hero-btn:hover{
-    border: 1px solid #ff4382;
-    background: #ff4382;
+    border: 1px solid #ff77a5;
+    background: #ff77a5;
     transition: 0.5s;
 }
 
@@ -101,8 +101,8 @@ nav img{
 .hero-btn2{
     display:inline-block;
     text-decoration: none;
-    color: #ff4382;
-    border: 1px solid #ff4382;
+    color: #ff77a5;
+    border: 1px solid #ff77a5;
     padding: 16px 38px;
     margin-bottom:5%;
     border-radius:3%;
@@ -113,8 +113,8 @@ nav img{
     font-weight:600;
 }
 .hero-btn2:hover{
-    border: 1px solid #ff4382;
-    background: #ff4382;
+    border: 1px solid #ff77a5;
+    background: #ff77a5;
     transition: 0.5s;
     color:#fff;
 }
@@ -132,8 +132,8 @@ nav .fa{
     }
     .nav-links{
         position: absolute;
-        background:#ff4382;
-        height: 100vh;
+        background:#ff77a5;
+        height: 60vh;
         width: 170px;
         top:0;
         right:-200px;
@@ -165,14 +165,14 @@ nav .fa{
 }
 
 h1{
-    color:#ff4382;
+    color:#ff77a5;
     font-size:30px;
     text-align:center;
 }
 
 h2{
     text-align: left;
-    color:#ff4382;
+    color:#ff77a5;
     font-weight:600;
     margin: 5px 0;
 }
@@ -187,7 +187,7 @@ h3{
 
 
 hr.solid{
-    border-top: 3px solid #fb67f1;
+    border-top: 3px solid #ff77a5;
     margin: 15px 15px;
 }
 
@@ -258,25 +258,29 @@ p.status.pl{
     margin-top: 20px;
     font-size:20px;
     font-weight: 600;
-    color:#ff4382;
+    color:#ff77a5;
 }
 
 .icons .fab{
-    color:#ff4382;
+    color:#ff77a5;
     margin:0 13px;
     cursor:pointer;
     padding: 18px 0;
     font-size:20px;
 }
 
-
+@media(max-width:700px){
+    .footer p{
+        font-size: 15px;
+    }
+}
 
 
 
 /*About Us Page*/
 
 .sub-header{
-    height:50vh;
+    height:100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(sp.jpg);
     background-position: center;
@@ -286,9 +290,9 @@ p.status.pl{
 }
 .about-h{
     font-size:60px;
-
-    height:50%;
-    width:50%;
+    object-fit:contain;
+    height:80%;
+    width:80%;
     position:relative;
     color:#fb67f1;
 }
@@ -343,14 +347,14 @@ p.status.pl{
     width:150px;
     height:150px;
     transform: translate(-50%, -50%);
-    border:2px solid #ff4382;
+    border:2px solid #ff77a5;
     border-radius:50%;
 }
 .team-container .member .member-name{
     margin-top:15px;
     text-align:center;
     padding:10px;
-    color:#ff4382;
+    color:#ff77a5;
     font-size:20px;
     font-weight:600;
 }
@@ -430,12 +434,24 @@ p.status.pl{
     .team-container .member .member-position{
         font-size:14px;
     }
+    .sub-header{
+        height:60vh;
+        width:100%;
+    }
     .sub-header h1{
         padding:50px;
     }
     .about-h{
-        margin-bottom:-100px;
         object-fit:contain;
+        padding:0;
+        height:100%;
+        width:100%;
+    }
+
+    .about-h img{
+        object-fit:fill;
+        margin:0;
+        padding:0;
         height:100%;
         width:100%;
     }
@@ -704,7 +720,7 @@ p.status.pl{
     display:flex;
     justify-content:center;
     align-items:center;
-    border-bottom:1px solid #fb67f1;
+    border-bottom:1px solid #ff77a5;
     margin-bottom:30px;
     font-size:22px;
 }
@@ -744,24 +760,19 @@ p.status.pl{
 .project-page .basic-info .title{
     margin-bottom:30px;
 }
-.project-page .basic-info .synopsis{
+.project-page .basic-info .synopsis {
     display:flex;
     align-items:center;
     justify-content:center;
-    background:#eae5e5;
     padding:15px;
-    border-radius:20px;
     transition:0.5s;
     margin-bottom:15px;
 }
 
-.project-page .basic-info .synopsis:hover{
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.3), -2px -2px 6px rgba(0,0,0,0.3);
-}
-
 .project-page .basic-info .synopsis p{
-    text-align:center;
-    width:800px;
+    text-align:left;
+    width:1000px;
+    font-size:20px;
 }
 .project-page{
     align-items:center;
@@ -783,7 +794,7 @@ p.status.pl{
         align-items:center;
         text-align:center;
         vertical-align:center;
-        border-bottom:1px solid #fb67f1;
+        border-bottom:1px solid #ff77a5;
         margin-bottom:30px;
         font-size:14px;
     }
@@ -814,25 +825,37 @@ p.status.pl{
     }
     .project-page .basic-info .synopsis{
         display:flex;
-        width:80%;
+        width:85%;
         align-items:center;
         justify-content:center;
-        background:#eae5e5;
-        padding:15px;
-        border-radius:20px;
+        padding:10px;
+        margin-top:0;
+        padding-top:0;
         transition:0.5s;
         margin-left:40px;
         margin-right:40px;
     }
+    .project-page .basic-info .synopsis p{
+        font-size:15px;
+        text-align:left;
+    }
     .project-page .basic-info .title h1{
         font-size:40px;
+    }
+    .project-page .basic-info .features{
+        margin-bottom:0;
+        padding-bottom:0;
     }
     .project-page .basic-info .features h2{
         font-size:20px !important;
         padding-top:10px;
     }
+    .project-page .basic-info .features p{
+        margin-bottom:0;
+    }
     .project-page .basic-info{
         margin-bottom:0px;
+        padding-bottom:0px;
     }
     .project-page .basic-info .title h3{
         font-size:20px;
@@ -866,7 +889,7 @@ p.status.pl{
 }
 
 .gallery .gallery-box img{
-    border:1px solid #ff4382;
+    border:1px solid #ff77a5;
     width:100%;
     height:100%;
     object-fit:cover;
@@ -884,6 +907,7 @@ p.status.pl{
         width:100%;
         padding-left:0;
         flex-direction:row;
+        margin-top:0;
     }
     .gallery .gallery-box{
         display:inline-blockx;
@@ -898,7 +922,7 @@ p.status.pl{
         padding:10px;
     }
     .gallery .gallery-box img{
-        border:1px solid #ff4382;
+        border:1px solid #ff77a5;
         width:100%;
         height:100%;
         object-fit:cover;
@@ -909,19 +933,26 @@ p.status.pl{
     }
     .gallery{
         margin-bottom:50px;
+        margin-top: 0px;
     }
 }
 
+.tabs {
+    position:relative;
+}
 .tabs .tabs-content{
     display:flex;
-    height:800px;
-    flex-direction:row;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(images/spbg.png);
+    position:relative;
+    min-height:700px;
+    height:100%;
+    flex-direction:row; 
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/spbg.png);
 }
 
 .tabs .tabs-content .tabs-text{
-    padding-top:100px;
+    padding-top:40px;
     padding-left:40px;
+    margin-right:30px;
     width:100%;
     height:100%;
     display:inline-block;
@@ -938,18 +969,18 @@ p.status.pl{
 }
 
 .tabs .tabs-content .tabs-image{
-    display:block;
-    width:500px;
-    height:100%;
+    display:flex;
+    width:800px;
+    max-height:700px;
     padding:0;
-    padding-left:100px;
-    padding-right:100px;
+    padding-left:15px;
+    padding-right:15px;
     margin:0;
 }
 .tabs .tabs-content .tabs-image img{
     height:100%;
     width:100%;
-    object-fit:cover;
+    object-fit:contain;
     padding:0;
 }
 
@@ -963,6 +994,7 @@ p.status.pl{
     font-size:40px;
     color:#fff;
 }
+
 .tabs .tabs-content .tabs-text h3 span{
     padding:6px;
     padding-bottom:2px;
@@ -974,8 +1006,64 @@ p.status.pl{
     text-align:left;
     padding:0;
     margin:0;
-    font-size:70px;
-    background: -webkit-linear-gradient(#ffd0fc, rgb(255, 0, 136));
+    font-size:60px;
+    background: -webkit-linear-gradient(#ff77a5, rgb(201, 66, 160));
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.satoshi{
+    background: -webkit-linear-gradient(#3aa159, rgb(5, 117, 52));
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.sayaka{
+    background: -webkit-linear-gradient(#3a84a1, rgb(13, 67, 167));
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.tomomi{
+    background: -webkit-linear-gradient(#aa3b19, #ba5e63);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.akio{
+    background: -webkit-linear-gradient(#d3c64e, #d1be80);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.naoki{
+    background: -webkit-linear-gradient(#4e88d3, #446f80);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.miu{
+    background: -webkit-linear-gradient(#c25981, #825050);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.keita{
+    background: -webkit-linear-gradient(#d66b6b, #a3691d);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs .tabs-content .tabs-text h2.shimakura{
+    background: -webkit-linear-gradient(#6e7c83, #64afaf);
     background-clip:text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -989,12 +1077,12 @@ p.status.pl{
 .tabs .tabs-sidebar{
     width:400px;
     flex-shrink:0;
-    background:#cccccc;
+    background:rgb(227, 236, 235);
 }
 
 .tabs .tabs-button{
     display:flex;
-    background:#eee;
+    background:rgb(227, 236, 235);
     border:none;
     width:100%;
     height:90px;
@@ -1003,7 +1091,7 @@ p.status.pl{
     font-size:25px;
 }
 .tabs .tabs-button span{
-    padding:25px;
+    padding:27px;
     padding-left:20px;
     padding-right:0px;
 }
@@ -1021,21 +1109,62 @@ p.status.pl{
 }
 
 .tabs .tabs-button:active{
-    background:#dddddd;
+    background:#f0f0f0;
 }
 
-.tabs .tabs-button:not(:last-of-type){
+.tabs .tabs-button{
     border-bottom:1px solid #cccccc;
+}
+
+.tabs .tabs-button.satoshi.tabs-button--active{
+    color:#527167;
+    border-right:5px solid #527167;
+}
+
+.tabs .tabs-button.sayaka.tabs-button--active{
+    color:#323783;
+    border-right:5px solid #323783;
+}
+
+.tabs .tabs-button.tomomi.tabs-button--active{
+    color:#ba5e63;
+    border-right:5px solid #ba5e63;
+}
+
+.tabs .tabs-button.akio.tabs-button--active{
+    color:#d1be80;
+    border-right:5px solid #d1be80;
+}
+
+.tabs .tabs-button.miu.tabs-button--active{
+    color:#825050;
+    border-right:5px solid #825050;
+}
+
+.tabs .tabs-button.naoki.tabs-button--active{
+    color:#446f80;
+    border-right:5px solid #446f80;
+}
+
+.tabs .tabs-button.keita.tabs-button--active{
+    color:#9b4912;
+    border-right:5px solid #9b4912;
+}
+
+.tabs .tabs-button.shimakura.tabs-button--active{
+    color:#81abc7;
+    border-right:5px solid #81abc7;
+}
+
+.tabs .tabs-button--active img{
+    filter:grayscale(0%);
 }
 
 .tabs .tabs-button--active{
     font-weight:bold;
-    color:#fb67f1;
-    border-right:5px solid #fb67f1;
+    color:#ff77a5;
+    border-right:5px solid #ff77a5;
     background:#dddddd;
-}
-.tabs .tabs-button--active img{
-    filter:grayscale(0%);
 }
 
 .tabs .tabs-content{
@@ -1055,19 +1184,16 @@ p.status.pl{
 
 .tabs .tabs-content .tabs-text .synopsis{
     display:flex;
+    color:rgb(255, 246, 253);
     align-items:center;
     justify-content:center;
-    background:#eae5e5c0;
-    padding:15px;
-    border-radius:20px;
     transition:0.5s;
     margin-bottom:100px;
     font-size:22px;
+    font-weight:500;
 }
 
-.tabs .tabs-content .tabs-text .synopsis:hover{
-    transform:scale(1.03);
-}
+
 
 .project-page .basic-info .features{
     margin-bottom:100px;
@@ -1083,11 +1209,14 @@ p.status.pl{
         flex-direction:column;
     }
     .tabs .tabs-content{
+        padding:5px;
         display:flex;
+        width:100%;
         height:100%;
+        min-height:600px;
         flex-direction:column;
         align-items:center;
-        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(images/spbg.png);
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/spbg.png);
     }
     
     .tabs .tabs-content .tabs-text{
@@ -1096,9 +1225,17 @@ p.status.pl{
         padding-right:5px;
         margin:0;
         width:100%;
-        height:100%;
         display:inline-block;
-        text-align:left;
+        text-align:center;
+        align-items:left;
+    }
+
+    .tabs .tabs-content .synopsis p{
+        position:relative;
+        display:flex;
+        width:90%;
+        padding:0;
+        font-size:14px;
     }
     
     .tabs .tabs-content .tabs-text .birthday{
@@ -1112,15 +1249,15 @@ p.status.pl{
     
     .tabs .tabs-content .tabs-image{
         display:block;
-        width:190px;
-        height:100%;
+        width:250px;
+        height:400px;
         padding:0;
-        margin:0;
+        padding-right:20px;
     }
     .tabs .tabs-content .tabs-image img{
         height:100%;
         width:100%;
-        object-fit:cover;
+        object-fit:contain;
         padding:0;
     }
     
@@ -1130,7 +1267,7 @@ p.status.pl{
     .tabs .tabs-content .tabs-text h3{
         text-align:left;
         padding:0;
-        margin-top:-5px;
+        margin-top:-15px;
         font-size:18px;
         color:#fff;
     }
@@ -1144,8 +1281,8 @@ p.status.pl{
     .tabs .tabs-content .tabs-text h2{
         text-align:left;
         padding:0;
-        margin:0;
-        font-size:26px;
+        margin-bottom:5px;
+        font-size:30px;
         background: -webkit-linear-gradient(#ffd0fc, rgb(255, 0, 136));
         background-clip:text;
         -webkit-background-clip: text;
@@ -1164,7 +1301,7 @@ p.status.pl{
         padding-bottom:3px;
         flex-shrink:0;
         flex-direction:row;
-        background:#cccccc;
+        background:#8a8586;
     }
     
     .tabs .tabs-button{
@@ -1200,19 +1337,61 @@ p.status.pl{
     
     .tabs .tabs-button--active{
         font-weight:bold;
-        color:#fb67f1;
+        color:#ff77a5;
         background:#dddddd;
     }
     .tabs .tabs-button--active img{
         filter:grayscale(0%);
-        border:2px solid #fb67f1;
+        border:2px solid #ff77a5;
+    }
+
+    .tabs .tabs-button.satoshi.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #36ad88;
+    }
+
+    .tabs .tabs-button.sayaka.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #367dad;
+    }
+
+    .tabs .tabs-button.tomomi.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #c0371f;
+    }
+
+    .tabs .tabs-button.keita.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #ca5c1c;
+    }
+
+    .tabs .tabs-button.akio.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #ddd342;
+    }
+
+    .tabs .tabs-button.naoki.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #288ac4;
+    }
+
+    .tabs .tabs-button.miu.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #c4284a;
+    }
+
+    .tabs .tabs-button.shimakura.tabs-button--active img{
+        filter:grayscale(0%);
+        border:2px solid #75d8e6;
     }
     
     .tabs .tabs-content{
-        padding:15px;
+        padding-left:20px;
+        padding-right:20px;
         padding-bottom:0px;
         margin-bottom:0px;
         display:none;
+        margin:0
     }
     
     .tabs .tabs-content--active{
@@ -1226,19 +1405,17 @@ p.status.pl{
     .tabs .tabs-content .tabs-text .synopsis{
         display:flex;
         align-items:center;
-        justify-content:center;
-        background:#eae5e5c0;
-        padding:15px;
-        border-radius:20px;
+        justify-content:left;
+        text-align:center;
+        padding:0px;
+        padding-top:3px;
         transition:0.5s;
         margin:0;
         margin-bottom:20px;
         font-size:14px;
     }
     
-    .tabs .tabs-content .tabs-text .synopsis:hover{
-        transform:scale(1.03);
-    }
+    
     .blog h1{
         font-size:30px;
     }
@@ -1412,7 +1589,7 @@ h1{
     flex-wrap:wrap;
 }
 .news-container .news-box{
-    width:350px;
+    width:500px;
     background-color:#e8f7fe;
     border-radius:5%;
     margin:20px;
@@ -1437,6 +1614,7 @@ h1{
     object-position:center;
     border-top-left-radius:5%;
     border-top-right-radius:5%;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.3);
 }
 .news-container .news-box .news-text{
     padding:10px;
