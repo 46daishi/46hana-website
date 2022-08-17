@@ -331,7 +331,7 @@ p{
     overflow: hidden;
     cursor:pointer;
     transition:0.5s;
-    background-color:#fff;
+    
 }
 .post-year{
     color:#000;
@@ -1479,3 +1479,13 @@ p{
         margin:20px;
     }
 }
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:-1;
+  }
