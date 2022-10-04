@@ -282,7 +282,7 @@ p.status.pl{
 .sub-header{
     height:100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(sp.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(../banner.jpg);
     background-position: center;
     background-size:cover;
     text-align:center;
@@ -291,10 +291,11 @@ p.status.pl{
 .about-h{
     font-size:60px;
     object-fit:contain;
-    height:80%;
-    width:80%;
+    height:75%;
+    width:75%;
     position:relative;
     color:#fb67f1;
+    margin-top:-50px;
 }
 
 .team{
@@ -310,9 +311,11 @@ p.status.pl{
 }
 
 .team-container .member{
-    max-width: 280px;
+    width: 250px;
+    max-width:250px;
     display:flex;
-    background-color:#ebf9ff;
+    background-color:#fafeff;
+    border: 2px solid #ff77a5;
     flex-direction:column;
     flex-grow:1;
     padding:10px;
@@ -322,7 +325,7 @@ p.status.pl{
 }
 
 .team-container .member:hover{
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2), -2px -2px 6px rgba(0,0,0,0.2);
+    transform:scale(1.05)
 }
 
 
@@ -365,6 +368,10 @@ p.status.pl{
     color:#4d4d4d;
     font-weight:400;
 }
+.team-container .member .member-position li{
+    list-style-type:"🌸 "
+}
+
 
 .team-container .member .member-desc{
     text-align:center;
@@ -446,6 +453,7 @@ p.status.pl{
         padding:0;
         height:100%;
         width:100%;
+        margin-bottom:0;
     }
 
     .about-h img{
@@ -716,11 +724,11 @@ p.status.pl{
 .project-page .top-container{
     width:100%;
     height:50px;
-    background-color:#e8f7fe;
+    background-color:#f8fcfe;
     display:flex;
     justify-content:center;
     align-items:center;
-    border-bottom:1px solid #ff77a5;
+    border-bottom:2px solid #ff77a5;
     margin-bottom:30px;
     font-size:22px;
 }
@@ -772,7 +780,7 @@ p.status.pl{
 .project-page .basic-info .synopsis p{
     text-align:left;
     width:1000px;
-    font-size:20px;
+    font-size:16px;
 }
 .project-page{
     align-items:center;
@@ -1199,6 +1207,9 @@ p.status.pl{
     margin-bottom:100px;
     font-size:22px;
 }
+.project-page .basic-info .features li{
+    list-style-type:"🌸 ";
+}
 .project-page .basic-info .features h2{
     text-align:center;
     font-size:30px;
@@ -1428,7 +1439,7 @@ p.status.pl{
 .cta{
     margin:100px auto;
     width:90%;
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(sp.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(sp.png);
     background-position:center;
     background-size:cover;
     border-radius:10px;
@@ -1589,15 +1600,16 @@ h1{
     flex-wrap:wrap;
 }
 .news-container .news-box{
-    width:500px;
-    background-color:#e8f7fe;
-    border-radius:5%;
+    width:450px;
+    background-color:#f5fafc;
+    border-radius:3px;
+    border: 2px solid #ff77a5;
     margin:20px;
     transition:0.5s;
 }
 
 .news-container .news-box:hover{
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2), -2px -2px 6px rgba(0,0,0,0.2);
+    transform:scale(1.05);
 }
 
 .news-container .news-box .news-img{
@@ -1612,8 +1624,8 @@ h1{
     position:relative;
     object-fit:cover;
     object-position:center;
-    border-top-left-radius:5%;
-    border-top-right-radius:5%;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
     border-bottom: 1px solid rgba(165, 165, 165, 0.3);
 }
 .news-container .news-box .news-text{
