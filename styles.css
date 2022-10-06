@@ -459,7 +459,7 @@ p{
 .cta{
     margin:100px auto;
     width:80%;
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(webimages/cta.png);
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(webimages/header.png);
     background-position:center;
     background-size:cover;
     border-radius:10px;
