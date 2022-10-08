@@ -1,1 +1,2 @@
-# Website for my Visual Novel development team
+# 46hana-website
+A website for my Visual Novel development team
