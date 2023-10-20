@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /category
 Disallow: /article/articletemp.html
 Disallow: /article/private.html
 Disallow: contact.html
