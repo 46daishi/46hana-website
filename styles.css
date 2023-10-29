@@ -1245,7 +1245,7 @@ a {
     color:#000;
     font-weight:400;
     font-size:20px;
-    margin-left:5px;
+    margin-left:0;
     margin-top:0;
     margin-bottom:20px;
 }
@@ -1267,6 +1267,8 @@ a {
     margin-left:15px;
     text-align:left;
     align-items:left;
+    margin-bottom: 40px;
+    margin-top: -10px;
 }
 .article-page .article-space ul li{
     padding:0;
